@@ -29,7 +29,9 @@
 
 ### Formula:
 
-\[ \text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}} \]
+\[
+\text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}}
+\]
 
 ### Detailed Explanation:
 
