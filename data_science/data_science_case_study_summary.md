@@ -1,4 +1,3 @@
-
 # Verve Group Data Science Case Study
 
 ## Problem 1: Estimating the Expected Win Rate
@@ -29,9 +28,7 @@
 
 ### Formula:
 
-\[
-\text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}}
-\]
+\[ \text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}} \]
 
 ### Detailed Explanation:
 
@@ -39,12 +36,11 @@ Refer to the notebook's Win rate calculation section for a step-by-step breakdow
 
 By following these steps and assumptions, we can accurately estimate the expected win rate for each bid price in the auction dataset.
 
-
 ## Problem 2: Maximizing Net Revenue
 
 To maximize net revenue, we calculated the net revenue for each bid price using the formula:
 
-\[ 	ext{Net Revenue} = (	ext{Advertiser Payment} - 	ext{Bid Price}) 	imes 	ext{Expected Win Rate} 	imes 	ext{Total Events} \]
+\[ \text{Net Revenue} = (\text{Advertiser Payment} - \text{Bid Price}) \times \text{Expected Win Rate} \times \text{Total Events} \]
 
 **Assumptions**:
 
@@ -54,21 +50,20 @@ To maximize net revenue, we calculated the net revenue for each bid price using 
 - **Homogeneity of Bids and Competitors**: The win rates calculated from historical data are assumed to be applicable to future auctions under similar conditions.
 - **No Additional Costs**: The calculation assumes there are no additional costs associated with bidding or winning other than the bid price itself.
 
-
 Assuming the advertiser payment is $0.50, the net revenue calculations are summarized below:
 
-| Bid Price | Total Events | Win Events | Win Rate | Net Revenue |
-|-----------|--------------|------------|----------|-------------|
-| 0.01      | 100000       | 0          | 0.0%     | -$0.00      |
-| 0.10      | 10000        | 3000       | 30.0%    | $1200.00    |
-| 0.20      | 10000000     | 2000000    | 20.0%    | $600000.00  |
-| 0.40      | 1000000      | 300000     | 30.0%    | $90000.00   |
-| 0.50      | 100000       | 20000      | 20.0%    | $0.00       |
-| 0.75      | 10000        | 3000       | 30.0%    | -$750.00    |
-| 1.00      | 1000         | 600        | 60.0%    | -$300.00    |
-| 2.00      | 100          | 70         | 70.0%    | -$105.00    |
-| 5.00      | 10           | 8          | 80.0%    | -$360.00    |
-| 9.00      | 1            | 1          | 100.0%   | -$8.50      |
+| Bid Price | Total Events | Win Events | Win Rate | Net Revenue  |
+|-----------|--------------|------------|----------|--------------|
+| 0.01      | 100000       | 0          | 0.0%     | -$0.00       |
+| 0.10      | 10000        | 3000       | 30.0%    | $1200.00     |
+| 0.20      | 10000000     | 2000000    | 20.0%    | $600000.00   |
+| 0.40      | 1000000      | 300000     | 30.0%    | $90000.00    |
+| 0.50      | 100000       | 20000      | 20.0%    | $0.00        |
+| 0.75      | 10000        | 3000       | 30.0%    | -$750.00     |
+| 1.00      | 1000         | 600        | 60.0%    | -$300.00     |
+| 2.00      | 100          | 70         | 70.0%    | -$105.00     |
+| 5.00      | 10           | 8          | 80.0%    | -$360.00     |
+| 9.00      | 1            | 1          | 100.0%   | -$8.50       |
 
 The optimal bid price to maximize net revenue is **$0.2**, which results in the highest net revenue of **$600,000**.
 
