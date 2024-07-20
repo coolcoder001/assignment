@@ -28,7 +28,7 @@
 
 ### Formula:
 
-\[ \text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}} \]
+$$ \text{Win Rate} = \frac{\text{Win Events}}{\text{Total Events}} $$
 
 ### Detailed Explanation:
 
@@ -40,7 +40,7 @@ By following these steps and assumptions, we can accurately estimate the expecte
 
 To maximize net revenue, we calculated the net revenue for each bid price using the formula:
 
-\[ \text{Net Revenue} = (\text{Advertiser Payment} - \text{Bid Price}) \times \text{Expected Win Rate} \times \text{Total Events} \]
+$$ \text{Net Revenue} = (\text{Advertiser Payment} - \text{Bid Price}) \times \text{Expected Win Rate} \times \text{Total Events} $$
 
 **Assumptions**:
 
